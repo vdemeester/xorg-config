@@ -19,6 +19,8 @@ fi
 # and start XMonad
 HOSTNAME=$(hostname)
 if test "${HOSTNAME}" = "vinnsento"; then
+    # On vinnsento kdm is started with console kit session support, there is
+    # no need to re-exec it (and it won't work as expected if executed).
     exec xmonad
 else
     exec ck-launch-session xmonad
