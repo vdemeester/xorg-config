@@ -1,0 +1,30 @@
+! file: ~/.Xdefaults
+! author: Vincent Demeester http://sbr.me
+! vim:ai:si:et:ts=4:sw=4:ft=xdefaults:
+
+! URxvt
+URxvt.cursorColor: #5E468C
+URxvt.cursorBlink: true
+URxvt.title: Terminal
+URxvt.urgentOnBell: true
+
+!URxvt.internalBorder: 2
+
+URxvt*scrollBar_right: false
+URxvt*scrollBar: false
+URxvt*borderLess: false
+
+URxvt.font:xft:Droid Sans Mono:medium:pixelsize=11
+URxvt.boldFont:xft:Droid Sans Mono:medium:pixelsize=11
+!URxvt.font:xft:Monospace:medium:pixelsize=11
+!URxvt.boldFont:xft:monospace:bold:pixelsize=11
+!URxvt.font:     -*-terminus-medium-r-*-*-14-*-*-*-*
+!URxvt.boldFont: -*-terminus-bold-r-*-*-14-*-*-*-*
+
+URxvt*termName: xterm-256color
+
+#include "/home/vincent/.colours/tangoesque"
+!#include "/home/vincent/.colours/sen"
+
+!xterm*faceName:           terminus:medium:pixelsize=12
+xterm*faceName:           Droid Sans Mono:medium:pixelsize=11
