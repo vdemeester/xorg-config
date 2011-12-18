@@ -9,6 +9,8 @@ if [ -x $MPD ]; then
         if [ -x $MPDSCRIBBLE ]; then
             if [ -f "$HOME/.mpdscribble.conf" ]; then
                 mpdscribble --conf $HOME/.mpdscribble.conf
+            else
+                echo "No local mpdscribble.conf, write one…"
             fi
         fi
     else
