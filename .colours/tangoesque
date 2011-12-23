@@ -1,5 +1,8 @@
 ! tangoesque scheme
-*background:  #222222
+!*background:  #ffffff
+!*foreground:  #222222
+!*background:  #222222
+*background:  #1c1c1c
 *foreground:  #aaaaaa
 ! Black
 *color0:      #000000
