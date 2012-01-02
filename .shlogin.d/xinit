@@ -1,0 +1,16 @@
+# Filename:     .shlogin.d/xinit
+# Author:       Vincent Demeester
+# License:      This file is licensed under the GPL v2
+# --------------------------------------------------------------------------- #
+# Start Xorg on login, and on tty1
+# --------------------------------------------------------------------------- #
+# {{{ xorg start onn tty1 ----------------------------------------------------
+if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then
+    while true
+    do
+        startx > $HOME/.local/logs/.xsession.log 2>&1
+        sleep 10
+    done
+fi
+# }}}
+# vim:filetype=sh foldmethod=marker autoindent expandtab shiftwidth=4
