@@ -5,11 +5,38 @@
 # Start Xorg on login, and on tty1
 # --------------------------------------------------------------------------- #
 # {{{ xorg start onn tty1 ----------------------------------------------------
+
+start_xorg () {
+    startx > $HOME/.local/logs/.xsession.log 2>&1
+}
+
 if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then
     while true
     do
-        startx > $HOME/.local/logs/.xsession.log 2>&1
-        sleep 10
+        start_xorg
+        # Ask if user wants to logout, halt, reboot or restart Xorg
+        local return_code=$?
+        if test $return_code -eq 0; then
+            echo "Xorg successfully quits."
+        else
+            echo "Xorg failed to quit properly."
+        fi
+        echo "Wait few seconds please..."
+        sleep 5
+        echo "What to do now ?"
+        while true
+        do
+            echo "(l)ogout/(h)alt/(r)eboot/(x)init restart"
+            echo -n "> "
+            read choice
+            case "$choice" in
+                l|logout) exit 0;;
+                  h|halt) ck-power.sh halt;;
+                r|reboot) ck-power.sh reboot;;
+                 x|xinit) break;;
+                       *) echo "Wrong entry...";;
+            esac
+        done
     done
 fi
 # }}}
