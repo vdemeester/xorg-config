@@ -1,0 +1,9 @@
+#!/bin/bash
+# Notifier (called by some notification-daemon)
+
+bottomy() { 
+    expr `xwininfo -metric -root|sed -ne 's/.*geometry.*x\([0-9]*\)+.*/\1/p'` - 14 
+}
+
+dzen2 -y $(bottomy) -p 4 -fn "-*-fixed-*-*-*-*-12-*-*-*-*-*-*-*" -bg "#161616" -fg "#afafdf"
+

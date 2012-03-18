@@ -1,0 +1,34 @@
+# -*- encoding: utf-8 -*-
+# Default time a notification is show, unless specified in notification
+DEFAULT_NOTIFY_TIMEOUT = 3000 # milliseconds
+
+# Maximum time a notification is allowed to show
+MAX_NOTIFY_TIMEOUT = 5000 # milliseconds
+
+# Maximum number of characters in a notification. 
+NOTIFICATION_MAX_LENGTH = 100 # number of characters
+
+# Time between regular status updates
+STATUS_UPDATE_INTERVAL = 2.0 # seconds
+
+# Always show text from STATUS_COMMAND? If false, only show notifications
+USE_STATUSTEXT=False
+
+# Put incoming notifications in a queue, so each one is shown.
+# If false, the most recent notification is shown directly.
+QUEUE_NOTIFICATIONS=True
+
+# update_text(text) is called when the status text should be updated
+# If there is a pending notification to be formatted, it is appended as
+# the final argument to the STATUS_COMMAND, e.g. as $1 in default shellscript
+
+# dwm statusbar update
+import subprocess
+def update_text(text):
+    # Get first line
+    #first_line = text.splitline()[:-1]
+    #shell_cmd = "echo '◔ %s ▒' | notifier" % text
+    shell_cmd = "echo ' -- %s -- ' | notifier" % text
+    print shell_cmd
+    subprocess.Popen(shell_cmd, shell=True)
+    # subprocess.call(["dzen2", "-p 2", "-y 750"], stdin=text)

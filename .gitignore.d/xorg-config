@@ -27,9 +27,14 @@
 !.xinitrc.d/mpd.sh
 !.xinitrc.d/trackpoint.sh
 !.xinitrc.d/urxvtd.sh
+!.xinitrc.d/statnot.sh
 !.sh
 !.sh/hook
 !.sh/hook/shlogin.post
 !.sh/hook/shlogin.post/xinit
+!.statnot
+!.local
+!.local/bin
+!.local/bin/notifier
 !.gitignore.d
 !.gitignore.d/xorg-config
