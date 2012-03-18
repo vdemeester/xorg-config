@@ -28,7 +28,10 @@ def update_text(text):
     # Get first line
     #first_line = text.splitline()[:-1]
     #shell_cmd = "echo '◔ %s ▒' | notifier" % text
-    shell_cmd = "echo ' -- %s -- ' | notifier" % text
-    print shell_cmd
+    # DZEN2 only...
+    notification = text.replace("<b>", "^fg(#df8787)^bg(#151515)")
+    notification = notification.replace("</b>", "^fg(#afafdf)^bg(#161616)")
+    #shell_cmd = "echo ' -- %s -- ' | notifier" % text
+    shell_cmd = "echo ' -- %s -- ' | notifier" % notification
     subprocess.Popen(shell_cmd, shell=True)
     # subprocess.call(["dzen2", "-p 2", "-y 750"], stdin=text)
