@@ -1,0 +1,18 @@
+# Misc operators
+#slash-o, period-o, etc already taken => use o-slash, etc
+<Multi_key> <o> <plus> : "\u2295" U2295
+<Multi_key> <o> <minus> : "\u229d" U229D
+<Multi_key> <o> <asterisk> : "\u229b" U229B
+<Multi_key> <o> <slash> : "\u2298" U2298
+<Multi_key> <o> <x> : "\u2297" U2297
+<Multi_key> <o> <o> : "\u229a" U229A
+<Multi_key> <o> <period> : "\u2299" U2299
+<Multi_key> <o> <equal> : "\u229c" U229C
+<Multi_key> <v> <v> : "\u221a" U221A
+<Multi_key> <2> <v> : "\u221a" U221A
+<Multi_key> <3> <v> : "\u221b" U221B
+<Multi_key> <4> <v> : "\u221c" U221C
+<Multi_key> <asterisk> <asterisk> : "\u2217" U2217
+<Multi_key> <asterisk> <x> : "×" multiply
+<Multi_key> <asterisk> <period> : "·" periodcentered
+<Multi_key> <asterisk> <o> : "\u2218" U2218
