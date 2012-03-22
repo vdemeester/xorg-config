@@ -28,6 +28,9 @@
 !.xinitrc.d/trackpoint.sh
 !.xinitrc.d/urxvtd.sh
 !.xinitrc.d/statnot.sh
+!.XCompose
+!.xcompose.d
+!.xcompose.d/*
 !.sh
 !.sh/hook
 !.sh/hook/shlogin.post
