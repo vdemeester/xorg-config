@@ -1,3 +1,5 @@
+# Include default one
+include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 # Misc operators
 #slash-o, period-o, etc already taken => use o-slash, etc
 <Multi_key> <o> <plus> : "\u2295" U2295
