@@ -37,7 +37,7 @@
 !.sh/hook/shlogin.post/xinit
 !.statnot
 !.local
-!.local/bin
-!.local/bin/notifier
+!bin
+!bin/notifier
 !.gitignore.d
 !.gitignore.d/xorg-config
