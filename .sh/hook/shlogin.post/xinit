@@ -7,7 +7,7 @@
 # {{{ xorg start onn tty1 ----------------------------------------------------
 
 start_xorg () {
-    startx > $HOME/.local/logs/.xsession.log 2>&1
+    startx > $HOME/logs/.xsession.log 2>&1
 }
 
 if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then
