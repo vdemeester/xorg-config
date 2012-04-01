@@ -1,4 +1,6 @@
 *
+!.config
+!.config/user-dirs.dirs
 !.colours
 !.colours/*
 !.colours/arthur
