@@ -39,6 +39,8 @@
 !.sh/hook/shlogin.post/xinit
 !.statnot
 !.local
+!.fonts
+!.fonts/*
 !bin
 !bin/notifier
 !.gitignore.d
