@@ -14,10 +14,10 @@ URxvt*scrollBar_right: false
 URxvt*scrollBar: false
 URxvt*borderLess: false
 
-!URxvt.font:xft:Ubuntu Mono:medium:pixelsize=12
-!URxvt.boldFont:xft:ubuntu Mono:bold:pixelsize=12
-URxvt.font:xft:Droid Sans Mono:medium:pixelsize=11
-URxvt.boldFont:xft:Droid Sans Mono:bold:pixelsize=11
+URxvt.font:xft:Ubuntu Mono:medium:pixelsize=13
+URxvt.boldFont:xft:Ubuntu Mono:bold:pixelsize=13
+!URxvt.font:xft:Droid Sans Mono:medium:pixelsize=11
+!URxvt.boldFont:xft:Droid Sans Mono:bold:pixelsize=11
 !URxvt.font:xft:Monospace:medium:pixelsize=11
 !URxvt.boldFont:xft:monospace:bold:pixelsize=11
 !URxvt.font:     -*-terminus-medium-r-*-*-14-*-*-*-*
@@ -30,3 +30,10 @@ URxvt*termName: xterm-256color
 
 !xterm*faceName:           terminus:medium:pixelsize=12
 xterm*faceName:           Droid Sans Mono:medium:pixelsize=11
+
+yeahconsole*consoleHeight:25
+yeahconsole*term:urxvtcd
+yeahconsole*anidelay:0
+!yeahconsole*toggleKey:None+F12
+yeahconsole*toggleKey:Win+dollar
+yeahconsole*keyFull:None+F11
