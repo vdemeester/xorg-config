@@ -22,7 +22,7 @@ if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then
             echo "Xorg failed to quit properly."
         fi
         echo "Wait few seconds please..."
-        sleep 5
+        sleep 1
         echo "What to do now ?"
         while true
         do
