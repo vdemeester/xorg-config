@@ -1,0 +1,3 @@
+#!/bin/sh
+# Simple init 3 wrapper
+init 3
