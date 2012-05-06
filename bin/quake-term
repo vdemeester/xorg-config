@@ -20,7 +20,7 @@ command -v screen >/dev/null && {
 command -v tmux >/dev/null && {
     CMD="tmux"
 }
-command -v screen >/dev/null && {
+if test -x $HOME/bin/tmx; then
     CMD="tmx default"
-}
+fi
 yeahconsole -e $CMD
