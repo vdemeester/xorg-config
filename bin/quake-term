@@ -23,4 +23,4 @@ command -v tmux >/dev/null && {
 if test -x $HOME/bin/tmx; then
     CMD="tmx default"
 fi
-yeahconsole -e $CMD
+yeahconsole -e $CMD &
