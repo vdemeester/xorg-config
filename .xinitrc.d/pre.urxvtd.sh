@@ -4,10 +4,10 @@
 URXVTD=`which urxvtd`
 if [ -x $URXVTD ]; then
     # Set env RXVT_SOCKET to .local/run !
-    if [ ! -d $HOME/.local/run ]; then
-        mkdir -p $HOME/.local/run
+    if [ ! -d $HOME/run ]; then
+        mkdir -p $HOME/run
     fi
-    export RXVT_SOCKET=$HOME/.local/run/rxvt-unicode-$(hostname)
+    export RXVT_SOCKET=$HOME/run/rxvt-unicode-$(hostname)
     $URXVTD -q -o -f
 else
     echo "No urxvtd. You should install it :"
