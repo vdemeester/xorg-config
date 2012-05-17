@@ -7,7 +7,7 @@
 # {{{ xorg start onn tty1 ----------------------------------------------------
 
 start_xorg () {
-    startx > $HOME/log/.xsession.log 2>&1
+    startx > $HOME/log/.xsession.log 2>$HOME/log/.xsession-errors.log
 }
 
 if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then
@@ -31,8 +31,8 @@ if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then
             read choice
             case "$choice" in
                 l|logout) exit 0;;
-                  h|halt) ck-power.sh halt;;
-                r|reboot) ck-power.sh reboot;;
+                  h|halt) pwrman S;;
+                r|reboot) pwrman R;;
                  x|xinit) break;;
                        *) echo "Wrong entry...";;
             esac
