@@ -1,1 +1,11 @@
-.gtkrc-2.0-kde4
+# Any Local customization should be done in ~/.gtkrc-2.0.mine
+# Please be aware that this file might be modified by tools like :
+# - lxappearanc
+# - gtk-chtheme
+# - …
+gtk-theme-name="MurrinaCandido"
+gtk-icon-theme-name="hicolor"
+gtk-font-name="Ubuntu 10"
+gtk-toolbar-style=2
+# FIXME Build this at update ('cause $HOME might change)
+include "/home/vincent/.gtkrc-2.0.mine"
