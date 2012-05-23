@@ -1,0 +1,7 @@
+# Filename:     .sh/hook/shlogin.post/libreoffice
+# Author:       Vincent Demeester
+# License:      This file is licensed under the GPL v2
+# --------------------------------------------------------------------------- #
+# Export variable for libreoffice toolkit (and other stuff, maybe)
+# --------------------------------------------------------------------------- #
+export OOO_FORCE_DESKTOP="gnome"
