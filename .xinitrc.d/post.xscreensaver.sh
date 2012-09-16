@@ -1,5 +1,5 @@
 #!/bin/sh
 # Start xscreensaver if available
-command -v xscreensaver && {
-    xscreensaver --no-splash &
+command -v gnome-screensaver && {
+    gnome-screensaver
 }
