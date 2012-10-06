@@ -19,7 +19,12 @@ xinitrc_d_run "pre."
 
 # Run the WM first
 # and start XMonad
-ck-launch-session xmonad & wmpid=$!
+env > /tmp/session-launch-env.log
+if test -n "$FROM_SLIM"; then
+    xmonad & wmpid=$!
+else
+    ck-launch-session xmonad & wmpid=$!
+fi
 
 # Then, the rest
 xinitrc_d_run "post."
