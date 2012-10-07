@@ -3,6 +3,8 @@
 !.config/user-dirs.dirs
 !.config/gtk-3.0
 !.config/gtk-3.0/settings.ini
+!.config/dunst
+!.config/dunst/dunstrc
 !.colours
 !.colours/*
 !.colours/arthur
