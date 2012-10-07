@@ -6,7 +6,8 @@
 #gtk-theme-name="MurrinaCandido"
 gtk-theme-name="Zukitwo-Dark"
 #gtk-theme-name="GrayRevenge"
-gtk-icon-theme-name="hicolor"
+#gtk-icon-theme-name="hicolor"
+gtk-icon-theme-name="Faenza"
 gtk-font-name="Ubuntu 10"
 gtk-toolbar-style=2
 # FIXME Build this at update ('cause $HOME might change)
