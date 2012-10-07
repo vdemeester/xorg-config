@@ -4,7 +4,8 @@
 # - gtk-chtheme
 # - …
 #gtk-theme-name="MurrinaCandido"
-gtk-theme-name="Zukitwo"
+gtk-theme-name="Zukitwo-Dark"
+#gtk-theme-name="GrayRevenge"
 gtk-icon-theme-name="hicolor"
 gtk-font-name="Ubuntu 10"
 gtk-toolbar-style=2
