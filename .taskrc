@@ -12,7 +12,8 @@
 
 # Files
 data.location=/home/vincent/.task
-merge.default.uri=ssh://bifrost.sbr.me:2322/home/vincent/.task/
+#merge.default.uri=ssh://bifrost.sbr.me:2322/home/vincent/.task/
+merge.default.uri=ssh://sif.sbr.me/home/vincent/.task/
 
 # Color theme (uncomment one to use)
 #include /home/vincent/share/doc/task/rc/light-16.theme
