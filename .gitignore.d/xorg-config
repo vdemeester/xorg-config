@@ -44,6 +44,7 @@
 !.local/share/applications
 !.local/share/applications/Eclipse.desktop
 !.local/share/applications/Terminal.desktop
+!.local/share/applications/mplayer.desktop
 !.fonts
 !.fonts/*
 !bin
