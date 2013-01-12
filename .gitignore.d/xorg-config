@@ -40,6 +40,10 @@
 !.sh/hook/shlogin.post/libreoffice
 !.statnot
 !.local
+!.local/share
+!.local/share/applications
+!.local/share/applications/Eclipse.desktop
+!.local/share/applications/Terminal.desktop
 !.fonts
 !.fonts/*
 !bin
