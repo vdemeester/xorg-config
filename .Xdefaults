@@ -14,8 +14,8 @@ URxvt*scrollBar_right: false
 URxvt*scrollBar: false
 URxvt*borderLess: false
 
-URxvt.font:xft:Ubuntu Mono:medium:pixelsize=13
-URxvt.boldFont:xft:Ubuntu Mono:bold:pixelsize=13
+URxvt.font:xft:Ubuntu Mono:medium:pixelsize=14
+URxvt.boldFont:xft:Ubuntu Mono:bold:pixelsize=14
 !URxvt.font:xft:Droid Sans Mono:medium:pixelsize=11
 !URxvt.boldFont:xft:Droid Sans Mono:bold:pixelsize=11
 !URxvt.font:xft:Monospace:medium:pixelsize=11
