@@ -4,6 +4,8 @@
 # vim:nu:ai:si:et:ts=4:sw=4:ft=sh
 # --------------------------------------
 
+systemd --user &
+
 # Run stuff from .xinitrc.d with the given prefix
 xinitrc_d_run() {
     prefix=$1
