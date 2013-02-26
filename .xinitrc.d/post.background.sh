@@ -9,7 +9,8 @@ if test -z "$FROM_SLIM"; then
         PICTURES="$(xdg-user-dir PICTURES)"
     }
     # Set a default value as $HOME/pictures/
-    test -z "${PICTURES}" && PICTURES="$HOME/pictures"
+    test -z "${PICTURES}" && PICTURES="$HOME/desktop/pictures"
+    echo "$FEH $PICTURES"
     if test -x "$FEH" && test -e $PICTURES/wallpaper; then
         $FEH --bg-fill $PICTURES/wallpaper
     else
