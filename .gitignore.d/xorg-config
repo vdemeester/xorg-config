@@ -7,6 +7,13 @@
 !.config/gtk-3.0/settings.ini
 !.config/dunst
 !.config/dunst/dunstrc
+!.config/systemd
+!.config/systemd/user
+!.config/systemd/user/urxvtd.service
+!.config/systemd/user/xinit.target
+!.config/systemd/user/wallpaper.service
+!.config/systemd/user/xmonad.service
+!.config/systemd/user/xmonad.target
 !.colours
 !.colours/*
 !.colours/arthur

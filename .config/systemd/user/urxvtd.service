@@ -1,0 +1,10 @@
+[Unit]
+Description=Urxvt Daemon
+After=xorg.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/urxvtd
+
+[Install]
+WantedBy=xinit.target
