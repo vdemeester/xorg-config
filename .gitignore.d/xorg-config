@@ -42,6 +42,8 @@
 !.unburden-home-dir.list
 !.sh
 !.sh/hook
+!.sh/hook/shenv.post
+!.sh/hook/shenv.post/dbus
 !.sh/hook/shlogin.post
 !.sh/hook/shlogin.post/xinit
 !.sh/hook/shlogin.post/libreoffice
