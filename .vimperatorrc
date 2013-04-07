@@ -1,17 +1,3 @@
-"Comportement de la barre (l = awesome bar, et s = search key)
-set complete=ls
-" set wildoptions=auto
-
-"Pour « [[ » et « ]] » permet de les faire fonctionner en Français
-"Ajout de précédent/suivant
-
-set nextpattern=\bnext|suivant\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\bmore\b
-set previouspattern=\bprev|previous|précédent\b,^<$,^(<<|«)$,^(<|«),(<|«)$
-
-"Définie quelles commandes sont ouvertes dans un nouvel onglet
-set newtab=all
-
-
 " [HJKL] -> {CTSR}
 " ————————————————
 " {cr} = « gauche / droite »
@@ -60,4 +46,16 @@ noremap e gt
 " premier/dernier ongegeglet
 noremap gi g^
 noremap ge g0
+"Comportement de la barre (l = awesome bar, et s = search key)
+set complete=ls
+" set wildoptions=auto
+"Pour « [[ » et « ]] » permet de les faire fonctionner en Français
+"Ajout de précédent/suivant
+set nextpattern=\bnext|suivant\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\bmore\b
+set previouspattern=\bprev|previous|précédent\b,^<$,^(<<|«)$,^(<|«),(<|«)$
+"Définie quelles commandes sont ouvertes dans un nouvel onglet
+set newtab=all
+set defsearch=duckduckgo
+source! /home/vincent/.vimperatorrc.local
 
+" vim: set ft=vimperator:
