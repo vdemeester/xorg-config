@@ -12,6 +12,7 @@ start_xorg () {
 
 if test $(tty) = /dev/tty1 && (( $UID )) && test -z "$DISPLAY"; then
     command -v systemd >/dev/null && {
+        export DBUS_SESSION_BUS_ADDRESS=/run/user/$(id -u)/dbus/user_bus_socket
         systemd --user
     } || {
         while true
