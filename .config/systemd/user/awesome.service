@@ -1,0 +1,10 @@
+[Unit]
+Description=awesome
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/awesome
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=awesome.target
