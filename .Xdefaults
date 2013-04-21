@@ -25,6 +25,11 @@ URxvt.boldFont:xft:Ubuntu Mono:bold:pixelsize=14
 
 URxvt*termName: xterm-256color
 
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.C-V: perl:clipboard:paste
+URxvt.keysym.C-A-V: perl:clipboard:paste_escaped
+URxvt.iso14755 : false
+
 #include "/home/vincent/.colours/tangoesque"
 !#include "/home/vincent/.colours/sen"
 
