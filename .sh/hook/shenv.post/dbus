@@ -4,5 +4,4 @@
 # --------------------------------------------------------------------------- #
 # This file is here to "fix" the systemd + dbus + session-units
 # --------------------------------------------------------------------------- #
-export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -g)/dbus/user_bus_socket
 # vim:filetype=sh foldmethod=marker autoindent expandtab shiftwidth=4

@@ -7,42 +7,38 @@
 # {{{ xorg start onn tty1 ----------------------------------------------------
 
 start_xorg () {
-    startx > $HOME/logs/.xsession.log 2>$HOME/logs/.xsession-errors.log
+    mkdir -p $HOME/var/log/
+    startx > $HOME/var/log/.xsession.log 2>$HOME/var/log/.xsession-errors.log
 }
 
 if test $(tty) = /dev/tty1 && (( $UID )) && test -z "$DISPLAY"; then
-    command -v systemd >/dev/null && {
-        export DBUS_SESSION_BUS_ADDRESS=/run/user/$(id -u)/dbus/user_bus_socket
-        systemd --user
-    } || {
+    while true
+    do
+        start_xorg
+        # Ask if user wants to logout, halt, reboot or restart Xorg
+        local return_code=$?
+        if test $return_code -eq 0; then
+            echo "Xorg successfully quits."
+        else
+            echo "Xorg failed to quit properly."
+        fi
+        echo "Wait few seconds please..."
+        sleep 1
+        echo "What to do now ?"
         while true
         do
-            start_xorg
-            # Ask if user wants to logout, halt, reboot or restart Xorg
-            local return_code=$?
-            if test $return_code -eq 0; then
-                echo "Xorg successfully quits."
-            else
-                echo "Xorg failed to quit properly."
-            fi
-            echo "Wait few seconds please..."
-            sleep 1
-            echo "What to do now ?"
-            while true
-            do
-                echo "(l)ogout/(h)alt/(r)eboot/(x)init restart"
-                echo -n "> "
-                read choice
-                case "$choice" in
-                    l|logout) exit 0;;
-                      h|halt) pwrman S;;
-                    r|reboot) pwrman R;;
-                     x|xinit) break;;
-                           *) echo "Wrong entry...";;
-                esac
-            done
+            echo "(l)ogout/(h)alt/(r)eboot/(x)init restart"
+            echo -n "> "
+            read choice
+            case "$choice" in
+                l|logout) exit 0;;
+                  h|halt) pwrman S;;
+                r|reboot) pwrman R;;
+                 x|xinit) break;;
+                       *) echo "Wrong entry...";;
+            esac
         done
-    }
+    done
 fi
 # }}}
 # vim:filetype=sh foldmethod=marker autoindent expandtab shiftwidth=4
