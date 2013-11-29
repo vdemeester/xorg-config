@@ -1,3 +1,0 @@
-[Unit]
-Description=Xinit
-Requires=xorg.target
