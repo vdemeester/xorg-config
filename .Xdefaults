@@ -36,9 +36,3 @@ URxvt.iso14755 : false
 !xterm*faceName:           terminus:medium:pixelsize=12
 xterm*faceName:           Droid Sans Mono:medium:pixelsize=11
 
-yeahconsole*consoleHeight:25
-yeahconsole*term:urxvtcd
-yeahconsole*anidelay:0
-!yeahconsole*toggleKey:None+F12
-yeahconsole*toggleKey:Win+dollar
-yeahconsole*keyFull:None+F11
