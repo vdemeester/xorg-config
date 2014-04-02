@@ -1,6 +1,6 @@
 #!/bin/sh
 # Set Keyboard to bépo !
-setxkbmap fr bepo-sbr
+setxkbmap sbr bepo
 # Disable Capslock and map it to escape
 setxkbmap -option compose:caps
 # Enable CTRL+ALT+BACKSPACE to terminate X
