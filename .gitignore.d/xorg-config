@@ -60,8 +60,5 @@
 !.fonts
 !.fonts/*
 !bin
-!bin/notifier
-!bin/quake-term
-!bin/init3
 !.gitignore.d
 !.gitignore.d/xorg-config
