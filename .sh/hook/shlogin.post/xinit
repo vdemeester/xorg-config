@@ -25,7 +25,7 @@ if test $(tty) = /dev/tty1 && (( $UID )) && test -z "$DISPLAY"; then
         echo "Wait few seconds please..."
         sleep 1
         echo "What to do now ?"
-        while true
+        while false
         do
             echo "(l)ogout/(h)alt/(r)eboot/(x)init restart"
             echo -n "> "
