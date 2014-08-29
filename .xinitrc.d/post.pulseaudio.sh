@@ -6,7 +6,8 @@
 PULSEAUDIO=`which pulseaudio`
 PASYSTRAY=`which pasystray`
 if test -x $PULSEAUDIO; then
-    $PULSEAUDIO $UDISKIE_OPTS --start &
+    #$PULSEAUDIO $UDISKIE_OPTS --start &
+    /usr/bin/start-pulseaudio-x11
     if test -x $PASYSTRAY; then
         $PASYSTRAY &
     fi
