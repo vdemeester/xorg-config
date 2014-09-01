@@ -1,1 +1,16 @@
-.gtkrc-2.0-kde4
+# File created by KDE Gtk Config
+# Configs for GTK2 programs 
+
+include "/usr/share/themes/QtCurve/gtk-2.0/gtkrc"
+style "user-font" 
+{
+	font_name="Ubuntu Regular"
+}
+widget_class "*" style "user-font"
+gtk-font-name="Ubuntu Regular 12"
+gtk-theme-name="QtCurve"
+gtk-icon-theme-name="oxygen"
+gtk-fallback-icon-theme="oxygen"
+gtk-toolbar-style=2
+gtk-menu-images=0
+gtk-button-images=0

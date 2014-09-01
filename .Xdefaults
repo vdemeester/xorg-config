@@ -29,6 +29,8 @@ URxvt.keysym.C-C: perl:clipboard:copy
 URxvt.keysym.C-V: perl:clipboard:paste
 URxvt.keysym.C-A-V: perl:clipboard:paste_escaped
 URxvt.iso14755 : false
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
 
 #include "/home/vincent/.colours/tangoesque"
 !#include "/home/vincent/.colours/sen"
