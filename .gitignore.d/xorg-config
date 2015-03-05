@@ -42,6 +42,9 @@
 !.xcompose.d/*
 !.unburden-home-dir
 !.unburden-home-dir.list
+!.urxvt
+!.urxvt/ext
+!.urxvt/ext/font-size
 !.sh
 !.sh/hook
 !.sh/hook/shenv.post

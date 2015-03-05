@@ -3,6 +3,8 @@
 ! vim:ai:si:et:ts=4:sw=4:ft=xdefaults:
 
 ! URxvt
+URxvt.perl-ext-common: font-size
+
 URxvt.cursorColor: #5E468C
 URxvt.cursorBlink: true
 URxvt.title: Terminal
@@ -31,6 +33,11 @@ URxvt.keysym.C-A-V: perl:clipboard:paste_escaped
 URxvt.iso14755 : false
 URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
+
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
 
 #include "/home/vincent/.colours/tangoesque"
 !#include "/home/vincent/.colours/sen"
