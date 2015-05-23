@@ -6,10 +6,10 @@
 
 !! jwr bright
 !black
-!*color0: #1B1D1E
-!*color8: #505354
-*color0: #262729
-*color8: #454545
+*color0: #1B1D1E
+*color8: #505354
+!*color0: #262729
+!*color8: #454545
  
 !red
 *color1: #E32E30
