@@ -26,7 +26,8 @@ xinitrc_d_run "pre."
 # and start XMonad
 env > /tmp/session-launch-env.log
 #ck-launch-session awesome & wmpid=$!
-awesome & wmpid=$!
+i3 & wmpid=$!
+#awesome & wmpid=$!
 
 # Then, the rest
 xinitrc_d_run "post."
