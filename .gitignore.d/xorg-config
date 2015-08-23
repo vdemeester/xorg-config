@@ -211,4 +211,5 @@
 !/.xinitrc.d/post.xscreensaver.sh
 !/.xinitrc.d/pre.cursor.sh
 !/.xinitrc.d/pre.urxvtd.sh
+!/.xinitrc.d/pre.xrandr.sh
 !/.xinitrc.d/pre.xrdb.sh
