@@ -1,10 +1,9 @@
 #!/bin/sh
 # Enable a composite manager if present.
-DCOMPMGR=`which dcompmgr`
+COMPTON=`which compton`
 
-if [ -x $DCOMPMGR ]; then
-    $DCOMPMGR &
+if [ -x $COMPTON ]; then
+    $COMPTON &
 else
-    echo "No dcompmgr. You might want to get it :"
-    echo "git clone git://git.openbox.org/dana/dcompmgr"
+    echo "No compton. You might want to get it : https://github.com/chjj/compton"
 fi
