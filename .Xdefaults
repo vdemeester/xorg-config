@@ -45,6 +45,9 @@ URxvt.keysym.C-S-Down: perl:font-size:decglobal
 !#include "/home/vincent/.colours/XresourceTomorrow"
 !#include   "/home/vincent/.colours/sbr"
 
+URxvt.depth: 32
+URxvt.background: [80]S_base3
+
 !xterm*faceName:           terminus:medium:pixelsize=12
 xterm*faceName:           Droid Sans Mono:medium:pixelsize=11
 
