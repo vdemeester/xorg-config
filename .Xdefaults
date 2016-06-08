@@ -17,14 +17,9 @@ URxvt*scrollBar_right: false
 URxvt*scrollBar: false
 URxvt*borderLess: false
 
-URxvt.font:xft:Ubuntu Mono:medium:pixelsize=14
-URxvt.boldFont:xft:Ubuntu Mono:bold:pixelsize=14
-!URxvt.font:xft:Droid Sans Mono:medium:pixelsize=11
-!URxvt.boldFont:xft:Droid Sans Mono:bold:pixelsize=11
-!URxvt.font:xft:Monospace:medium:pixelsize=11
-!URxvt.boldFont:xft:monospace:bold:pixelsize=11
-!URxvt.font:     -*-terminus-medium-r-*-*-14-*-*-*-*
-!URxvt.boldFont: -*-terminus-bold-r-*-*-14-*-*-*-*
+Xterm.font: xft:Ubuntu Mono:medium:size=12:antialias=true,xft:Symbola:size=8:antialias=true
+URxvt.font: xft:Ubuntu Mono:medium:size=12:antialias=true,xft:Symbola:size=8:antialias=true
+URxvt.letterSpace: 0
 
 URxvt*termName: xterm-256color
 
