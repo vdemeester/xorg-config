@@ -1,7 +1,0 @@
-# Filename:         .sh/hook/shenv.post/dbus
-# Author:           Vincent Demeester
-# License:          This file is licensed under the GPL v2
-# --------------------------------------------------------------------------- #
-# This file is here to "fix" the systemd + dbus + session-units
-# --------------------------------------------------------------------------- #
-# vim:filetype=sh foldmethod=marker autoindent expandtab shiftwidth=4
